@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E9E0E0; 
+    color: #000000; 
+}
+
+
+.about, .services {
+    background: linear-gradient(180deg, #E9E0E0, #6B63D6); /* De gris claro a morado */
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+/* Sombra para resaltar secciones */
+.about, .services, .transmision-en-vivo {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar {
+    background: linear-gradient(180deg, #6B63D6, #261E80) !important; /* De azul claro a azul oscuro */
+    border-bottom: 3px solid #261E80; 
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: white; 
+    background-color: transparent;
+}
+
+
+.main-background {
+    background: url('/HTML/imagenes/COLLAGE_SINCELEJO_SABANAS.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+
+.main-background h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.main-background p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* SOBRE NOSOTROS */
+.about h2, .services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6B63D6; 
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.about .btn {
+    background-color: #6B63D6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about .btn:hover {
+    background-color: #6B63D6; /* Botón al pasar el mouse */
+}
+
+/* SEPARADOR */
+.divider {
+    height: 5px;
+    background-color: #6B63D6;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+.transmision-en-vivo {
+    background: url("/HTML/imagenes/sincelejo.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.transmision-en-vivo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.transmision-en-vivo h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/* SECCIÓN SERVICIOS */
+.services {
+    background-color: #E9E0E0;
+    text-align: center;
+    padding: 50px 20px;
+
+    
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.servicio {
+    background: white;
+    border: 2px solid #6B63D6;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    width: 200px;
+    transition: 0.3s;
+    height: 75px;
+}
+
+.servicio:hover {
+    background: #6B63D6;
+    color: white;
+}
+
+
+footer {
+    background-color: black; 
+    color: white; 
+    padding: 30px 20px;
+    text-align: center;
+}
+
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    margin: 0 15px; /* Espacio entre los íconos */
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.1); /* Efecto de ampliación al pasar el mouse */
+}
+
+/* Tamaño de los íconos */
+footer .social-icons img {
+    width: 40px; 
+    height: auto;
+    object-fit: contain;
+}
